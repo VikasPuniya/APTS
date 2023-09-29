@@ -59,7 +59,7 @@ video{
     font-family:Arial, Helvetica, sans-serif;
 }
 
-button{
+.btn{
     background-color: #202939;
     border: solid;
     border-color: #202939;
@@ -70,7 +70,7 @@ button{
     background-color: rgba(0,0,0,.7);
 }
 
-button:hover{
+.btn:hover{
     border: solid;
     border-color: #347e4e;
     color: #57ce80;
@@ -156,4 +156,245 @@ button:hover{
   .mask ul li:hover::after{
     width: 100%;
     
+  }
+
+
+
+
+  /*===========================
+      Synopsis Page Start
+  ==============================*/
+
+  .parent_synopsis_box{
+    display: flex;
+    margin: 150px 0 0 30px;
+  }
+
+  .primary_synopsis_box{
+    margin: 0 30px 0 30px;
+    padding:0 30px;
+    background-image: url(images/Synopsis_box.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-right-radius: 130px;
+    border-top-left-radius: 90px;
+    border-bottom-left-radius: 110px;
+    height: 700px;
+    width: 1200px;
+    backdrop-filter: blur(8px);
+  }
+  .scroll{
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .synopsis_content_box{
+    margin: 16px 0px 0px 60px;
+    height: 610px;
+  }
+  .synopsis_topic{
+    height: 74px;
+    width: 445px;
+    color: rgb(223, 23, 33);
+    padding:20px 0px 0px 0px;
+    font-size: 40px;
+    font-weight: 1000;
+    font-style:italic bold;
+    font-family:'Courier New', Courier, monospace;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  .synopsis_content{
+    color: antiquewhite;
+    margin: 30px 40px 0px 10px;
+    padding:10px 40px 10px 10px;
+    height: 510px;
+    border-radius: 20px;
+    scrollbar-color: rgb(250, 59, 59);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .synopsis_content::-webkit-scrollbar {
+    width: 10px;
+  }
+  .synopsis_content::-webkit-scrollbar-thumb{
+      background-image: linear-gradient(180deg, #fa4949 0%, #3694ec 99%);
+      box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+      border-radius: 100px;
+  }
+  .synopsis_content::-webkit-scrollbar-track {
+    background: #40c6e72a;
+    border-radius: 100px;
+  }
+  .synopsis_content::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(180deg, #f10808 0%, #2261be 99%);
+      border-radius: 100px;
+  }
+
+  .center{
+    padding-top:50px ;
+    text-align: center;
+  }
+  .blue{
+    color: #57b1ec;
+  }
+  .light{
+    color: #ff8484;
+  }
+  .hide{
+    display: none;
+  }
+  .secondary_synopsis_box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 530px;
+    margin: 65px 60px;
+    padding:0 10px;
+  }
+  .synopsis_button{
+    border: none;
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.164);
+    transition: 0.2s;
+  }
+  .synopsis_button:hover{
+    border: none;
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.164);
+    font-size: 16px;
+  }
+  .secondary_synopsis_box_btn1{
+    background-image: url(images/Synopsis_btn_1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:110px;
+    width: 225px;
+    margin:10px 40px 10px 0px;
+    color: antiquewhite;
+    padding: 40px 40px;
+    backdrop-filter: blur(7px);
+  }
+  
+  .secondary_synopsis_box_btn2{
+    background-image: url(images/Synopsis_btn_4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:90px;
+    width: 225px;
+    margin:10px 0px 10px 0px;
+    color: antiquewhite;
+    padding: 40px 50px;
+    backdrop-filter: blur(7px);
+  }
+  .secondary_synopsis_box_btn3{
+    background-image: url(images/Synopsis_btn_3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:95px;
+    width: 225px;
+    margin:10px 40px 10px 0px;
+    color: antiquewhite;
+    padding: 40px 70px;
+    backdrop-filter: blur(5px);
+  }
+  .secondary_synopsis_box_btn4{
+    background-image: url(images/Synopsis_btn_4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:90px;
+    width: 225px;
+    margin:10px 0px 10px 0px;
+    color: antiquewhite;
+    padding: 40px 80px;
+    backdrop-filter: blur(7px);
+  }
+  .secondary_synopsis_box_btn5{
+    background-image: url(images/Synopsis_btn_4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:90px;
+    width: 225px;
+    margin:10px 40px 10px 0px;
+    color: antiquewhite;
+    padding: 30px 50px; 
+    text-align: center;
+    backdrop-filter: blur(7px);
+  }
+  .secondary_synopsis_box_btn6{
+    background-image: url(images/Synopsis_btn_3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:95px;
+    width: 225px;
+    margin:10px 0px 10px 0px;
+    color: antiquewhite;
+    padding: 30px 45px;
+    text-align: center;
+    backdrop-filter: blur(7px);
+  }
+  .secondary_synopsis_box_btn7{
+    background-image: url(images/Synopsis_btn_1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:110px;
+    width: 225px;
+    margin:10px 40px 10px 0px;
+    color: antiquewhite;
+    padding: 40px 60px;
+    backdrop-filter: blur(7px);
+  }
+  .secondary_synopsis_box_btn8{
+    background-image: url(images/Synopsis_btn_4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:90px;
+    width: 225px;
+    margin:10px 0px 10px 0px;
+    color: antiquewhite;
+    padding: 40px 60px;
+    backdrop-filter: blur(7px);
+  }
+
+  .secondary_synopsis_box_btn1:hover{
+    color: rgb(255, 57, 57);
+    background-image:
+    linear-gradient(rgba(255, 114, 114, 0.158), rgba(255, 201, 201, 0.075)),
+    url(images/Synopsis_btn_1.png);
+  }.secondary_synopsis_box_btn2:hover{
+    color: rgb(255, 57, 57);
+    background-image:
+    linear-gradient(rgba(255, 114, 114, 0.158), rgba(255, 201, 201, 0.075)),
+    url(images/Synopsis_btn_4.png);
+  }.secondary_synopsis_box_btn3:hover{
+    color: rgb(255, 57, 57);
+    background-image:
+    linear-gradient(rgba(255, 114, 114, 0.158), rgba(255, 201, 201, 0.075)),
+    url(images/Synopsis_btn_3.png);
+  }.secondary_synopsis_box_btn4:hover{
+    color: rgb(255, 57, 57);
+    background-image:
+    linear-gradient(rgba(255, 114, 114, 0.158), rgba(255, 201, 201, 0.075)),
+    url(images/Synopsis_btn_4.png);
+  }.secondary_synopsis_box_btn5:hover{
+    color: rgb(255, 57, 57);
+    background-image:
+    linear-gradient(rgba(255, 114, 114, 0.158), rgba(255, 201, 201, 0.075)),
+    url(images/Synopsis_btn_4.png);
+  }.secondary_synopsis_box_btn6:hover{
+    color: rgb(255, 57, 57);
+    background-image:
+    linear-gradient(rgba(255, 114, 114, 0.158), rgba(255, 201, 201, 0.075)),
+    url(images/Synopsis_btn_3.png);
+  }.secondary_synopsis_box_btn7:hover{
+    color: rgb(255, 57, 57);
+    background-image:
+    linear-gradient(rgba(255, 114, 114, 0.158), rgba(255, 201, 201, 0.075)),
+    url(images/Synopsis_btn_1.png);
+  }.secondary_synopsis_box_btn8:hover{
+    color: rgb(255, 57, 57);
+    background-image:
+    linear-gradient(rgba(255, 114, 114, 0.158), rgba(255, 201, 201, 0.075)),
+    url(images/Synopsis_btn_4.png);
   }
