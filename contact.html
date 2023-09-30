@@ -3,9 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=c, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>contact</title>
 </head>
 <body>
-    <h1>vikas </h1>
+    <div class="bg-image">
+
+        <!--NAV BAR-->
+        <nav class="mask">
+            <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
+            <a href="index.html"><h class="title">APTS</h></a>
+            <ul class="list">
+              <li><a href="Synopsis.html">Synopsis</a></li>
+              <li><a href="contact.html">About Us</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+             
+        <!-- Contact Us Page-->
+        <div class="layer1">
+
+            <div class="primary_block">
+                <div class="primary_block_2">
+                    <div class="contact_title">CONTACT US</div>
+
+
+                    <div class="form">
+                        <div class="contact-form">
+                          <form autocomplete="off"  onsubmit="sendEmail(); reset(); return false;">
+                            <div class="input-container">
+                              <input id="name" type="text" name="name" class="input" />
+                              <label for="">Username</label>
+                              <span>Username</span>
+                            </div>
+                            <div class="input-container">
+                              <input id="email" type="email" name="email" class="input" />
+                              <label for="">Email</label>
+                              <span>Email</span>
+                            </div>
+                            <div class="input-container">
+                              <input id="phone" type="tel" name="phone" class="input" />
+                              <label for="">Phone</label>
+                              <span>Phone</span>
+                            </div>
+                            <div class="input-container textarea">
+                              <textarea id="message" name="message" class="input"></textarea>
+                              <label for="">Message</label>
+                              <span>Message</span>
+                            </div>
+                            <button id="messageBtn" type="submit" value="" class="message_btn">Send</button>
+                          </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="secondary_block">
+                <div class="secondary_block_2">
+                    <h1 class="ait">AIT Pune</h1>
+                </div>
+            </div>
+
+        </div>
+
+    </div> 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="interact.js"></script>
 </body>
 </html>
